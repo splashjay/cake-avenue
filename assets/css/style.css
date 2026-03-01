@@ -281,11 +281,38 @@ h1,h2,h3,.logo-text{font-family:"Bodoni Moda", serif;}
   border-bottom:1px solid var(--line);
 }
 .nav a:hover{opacity:.9}
+/* ✅ Logo container: do NOT force small box */
 .brand-mark{
-  width:38px; height:38px; border-radius:12px;
-  display:grid; place-items:center;
-  background: linear-gradient(135deg, rgba(215,183,122,.22), rgba(199,122,139,.14));
-  border:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:auto;
+  height:auto;
+
+  padding:0;
+  background:none;
+  border:0;
+  border-radius:0;
+
+}
+}
+/* ✅ Bigger logo (clear) */
+.logo-img{
+  height: 64px;       /* Desktop */
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display:block;
+}
+
+@media (max-width: 768px){
+  .logo-img{
+    height: 52px;
+    max-width: 170px;
+  }
+}
+
 }
 .btn.primary{
   background: linear-gradient(135deg, var(--gold), var(--gold2));
