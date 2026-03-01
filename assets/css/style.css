@@ -159,11 +159,19 @@ h1{
   display:flex; flex-direction:column; gap:12px;
 }
 /* Logo image sizing */
+/* Bigger, clearer logo */
 .logo-img{
-  height: 32px;
+  height: 52px;      /* Desktop size */
   width: auto;
   display: block;
   object-fit: contain;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px){
+  .logo-img{
+    height: 48px;
+  }
 }
 
 .product-card .thumb{
