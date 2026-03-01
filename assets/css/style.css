@@ -166,7 +166,7 @@ h1{
 /* Logo image sizing */
 /* Bigger, clearer logo */
 .logo-img{
-  height: 52px;      /* Desktop size */
+  height: 56px;      /* Desktop size */
   width: auto;
   display: block;
   object-fit: contain;
