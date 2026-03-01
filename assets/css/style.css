@@ -130,6 +130,36 @@ h1{
   overflow:hidden;
   position:relative;
 }
+.hero-art .art{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make image fill entire hero banner */
+.hero-img{
+  position: absolute;
+  inset: 0;              /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills banner */
+  object-position: center;
+  opacity: 1;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+
+/* Keep your badge above the image */
+.hero-art .badge{
+  position: absolute;
+  z-index: 3;
+}
+
+/* Optional: remove bokeh overlay if it makes image look faded */
+.hero-art .bokeh{
+  z-index: 2;
+  pointer-events: none;
+  opacity: .25;   /* reduce overlay */
+}
 .bokeh{
   position:absolute; inset:-40px;
   background:
