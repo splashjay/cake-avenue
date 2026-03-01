@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Cake Avenue — Premium Bakes</title>
+<meta name="description" content="Cake Avenue — premium cinnamon rolls, gooey cookies, and custom cakes."/>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#c77a8b" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+
+
+  <meta name="description" content="Premium cakes, gooey stuffed cookies, and custom baking — made fresh with love.">
+  <meta property="og:title" content="Cake Avenue | Premium Cakes & Cookies">
+  <meta property="og:description" content="Premium cakes, gooey stuffed cookies, and custom baking — made fresh with love.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Cake Avenue home">
+        <div class="brand-mark" aria-hidden="true">CA</div>
+        <div>
+          <div class="brand-name">Cake Avenue</div>
+          <div class="brand-tag">premium bakes</div>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" type="button" aria-label="Open menu" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="cakes.html">Custom Cakes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="menu.html">View menu</a>
+        <a class="btn primary" href="order.html">Order now</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu" data-open="false" data-nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="cakes.html">Custom Cakes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn primary" style="margin-top:12px; width:100%" href="order.html">Order now</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="card pad">
+        <div class="kicker"><span class="dot"></span> Fresh baked • Small batch • Premium toppings</div>
+        <h1>Handcrafted cinnamon rolls, gooey cookies & elegant cakes.</h1>
+        <p class="lead">A premium home-bakery experience—soft rolls, molten centers, and beautiful buttercream finishes. Made in small batches for maximum freshness.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="order.html">Order now</a>
+          <a class="btn ghost" href="menu.html">See full menu</a>
+        </div>
+        <div class="pills" aria-label="Highlights">
+          <div class="pill">Box deals available</div>
+          <div class="pill">Pickup by appointment</div>
+          <div class="pill">Seasonal specials</div>
+          <div class="pill"><a href="menu.html#new-release" style="color:inherit">New release cookies</a></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art">
+          <div class="bokeh"></div>
+          <div class="badge">
+            <strong>Most popular</strong>
+            <span>Nutella + Biscoff rolls</span>
+          </div>
+          <img src="assets/img/hero-placeholder.jpg" alt="Cake Avenue hero banner (replace with your best product photo)" style="mix-blend-mode:multiply; opacity:.92; height:100%; width:100%; object-fit:cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Featured categories</h2>
+    <p>Fast to browse, easy to order. Tap a category to view items and pricing.</p>
+
+    <div class="grid3">
+      <div class="product-card">
+        <div class="thumb" aria-hidden="true"></div>
+        <h3>Signature Cinnamon Rolls</h3>
+        <p>Soft, fluffy rolls topped with Nutella, Biscoff, Pistachio & more. Perfect for sharing.</p>
+        <div class="price-row">
+          <span class="price">Box deals</span>
+          <a class="link" href="menu.html#rolls">View rolls →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="thumb" aria-hidden="true" style="background:
+          radial-gradient(260px 160px at 20% 20%, rgba(199,122,139,.35), transparent 60%),
+          radial-gradient(240px 150px at 78% 20%, rgba(106,163,178,.28), transparent 62%),
+          linear-gradient(135deg, rgba(255,255,255,.85), rgba(255,250,243,.6));"></div>
+        <h3>Stuffed Gooey Cookies</h3>
+        <p>Thick bakery-style cookies with molten centers: Nutella lava, Biscoff core, and more.</p>
+        <div class="price-row">
+          <span class="price">6 for $30</span>
+          <a class="link" href="menu.html#cookies">View cookies →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="thumb" aria-hidden="true" style="background:
+          radial-gradient(260px 160px at 20% 20%, rgba(106,163,178,.35), transparent 60%),
+          radial-gradient(240px 150px at 78% 20%, rgba(217,180,143,.28), transparent 62%),
+          linear-gradient(135deg, rgba(255,255,255,.85), rgba(255,250,243,.6));"></div>
+        <h3>Custom & Celebration Cakes</h3>
+        <p>Timeless buttercream finishes—birthday cakes, heart cakes, and minimal modern styles.</p>
+        <div class="price-row">
+          <span class="price">By inquiry</span>
+          <a class="link" href="cakes.html">Explore cakes →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" style="margin-top:18px">
+      <div>
+        <strong>Box Deals</strong>
+        <div><span>Save more when you order for sharing, gifting, or events.</span></div>
+      </div>
+      <a class="btn primary" href="order.html">Start an order</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="menu-grid">
+      <div class="menu-block">
+        <h2>How ordering works</h2>
+        <p class="small">Simple steps so you always know what to do next.</p>
+        <ol class="small" style="line-height:1.9; margin:10px 0 0; padding-left:18px">
+          <li><strong>Choose</strong> your items from the menu.</li>
+          <li><strong>Submit</strong> the order form with your pickup date.</li>
+          <li><strong>Confirm</strong> availability + payment details via message.</li>
+        </ol>
+        <div class="note" style="margin-top:14px">
+          Tip: Replace the placeholder images in <strong>assets/img/</strong> with your real product photos for a premium look.
+        </div>
+      </div>
+
+      <div class="menu-block">
+        <h2>Best sellers</h2>
+        <ul class="menu-list" style="margin-top:8px">
+          <li class="menu-item"><span class="name">Nutella Drizzle Roll</span><span class="dots"></span><span class="price">$7.00</span></li>
+          <li class="menu-item"><span class="name">Biscoff Bliss Roll</span><span class="dots"></span><span class="price">$7.50</span></li>
+          <li class="menu-item"><span class="name">Pistachio Dream Roll</span><span class="dots"></span><span class="price">$8.50</span></li>
+          <li class="menu-item"><span class="name">S’mores Cookie</span><span class="dots"></span><span class="price">$5.25</span></li>
+        </ul>
+        <div class="hero-actions" style="margin-top:16px">
+          <a class="btn ghost" href="menu.html">Browse menu</a>
+          <a class="btn primary" href="order.html">Order now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Weekly Drops</h2><span class="script">Fresh baked, limited batches</span>
+    </div>
+    <div class="divider"></div>
+    <div class="menu-grid">
+      <div class="menu-block lux-card">
+        <div class="badge">✨ New Release Cookies</div>
+        <p class="small">Chocolate Chip, Red Velvet Cheesecake, and White Chocolate Chip — baked in small batches for maximum gooeyness.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="menu.html#new-release">View prices</a>
+          <a class="btn ghost" href="order.html">Place an order</a>
+        </div>
+      </div>
+      <div class="menu-block lux-card">
+        <div class="badge">🎂 Custom Cakes</div>
+        <p class="small">Birthdays, weddings, engagement, baby showers — share your theme and we’ll design a cake that looks as good as it tastes.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="cakes.html">Custom cake options</a>
+          <a class="btn ghost" href="contact.html">Get a quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Gallery</h2><span class="script">A taste of Cake Avenue</span>
+    </div>
+    <div class="divider"></div>
+    <div class="gallery">
+      <div class="g"><img src="assets/img/new-chocolate-chip-1.jpg" alt="Chocolate chip cookie"></div>
+      <div class="g"><img src="assets/img/new-red-velvet-1.jpg" alt="Red velvet cheesecake cookie"></div>
+      <div class="g"><img src="assets/img/new-white-choc-chip-1.jpg" alt="White chocolate chip cookie"></div>
+    </div>
+    <p class="small" style="margin-top:12px; color:var(--muted)">Tip: Replace these with your newest Instagram photos anytime (assets/img/).</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>FAQs</h2><span class="script">Orders & pickups</span>
+    </div>
+    <div class="divider"></div>
+    <div class="faq">
+      <details>
+        <summary>How do I order?</summary>
+        <div class="small" style="margin-top:8px">Use the Order page, or message us on Instagram. We’ll confirm availability and pickup time.</div>
+      </details>
+      <details>
+        <summary>Do you offer box deals?</summary>
+        <div class="small" style="margin-top:8px">Yes — box deals are listed on the Menu page when available.</div>
+      </details>
+      <details>
+        <summary>Do you do custom cakes?</summary>
+        <div class="small" style="margin-top:8px">Absolutely. Share your theme, size, and date on the Contact page for a quote.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <div class="brand-mark" aria-hidden="true">CA</div>
+          <div>
+            <div class="brand-name">Cake Avenue</div>
+            <div class="brand-tag">premium bakes</div>
+          </div>
+        </div>
+        <p class="muted">Handcrafted cinnamon rolls, stuffed cookies, and custom cakes made in small batches. Fresh, rich, and beautifully finished.</p>
+        <div class="badge-row">
+          <div class="mini-badge">Small batch</div>
+          <div class="mini-badge">Premium toppings</div>
+          <div class="mini-badge">Pickup by appointment</div>
+        </div>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <div style="display:grid; gap:8px">
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+          <a href="cakes.html">Custom Cakes</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Order & Social</h3>
+        <div style="display:grid; gap:8px">
+          <a href="order.html">Order form</a>
+          <a href="https://www.instagram.com/cake_avenue_0" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" onclick="navigator.clipboard.writeText('@cake_avenue_0'); return false;">Copy IG handle</a>
+        </div>
+        <p class="muted" style="margin-top:12px">© 2026 Cake Avenue. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Order — Cake Avenue</title>
+<meta name="description" content="Cake Avenue — premium cinnamon rolls, gooey cookies, and custom cakes."/>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#c77a8b" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+
+
+  <meta name="description" content="Place an order for cookies, cinnamon rolls, and custom baking. We’ll confirm availability and pickup time.">
+  <meta property="og:title" content="Order | Cake Avenue">
+  <meta property="og:description" content="Place an order for cookies, cinnamon rolls, and custom baking. We’ll confirm availability and pickup time.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Cake Avenue home">
+        <div class="brand-mark" aria-hidden="true">CA</div>
+        <div>
+          <div class="brand-name">Cake Avenue</div>
+          <div class="brand-tag">premium bakes</div>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" type="button" aria-label="Open menu" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="cakes.html">Custom Cakes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="menu.html">View menu</a>
+        <a class="btn primary" href="order.html">Order now</a>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu" data-open="false" data-nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="cakes.html">Custom Cakes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn primary" style="margin-top:12px; width:100%" href="order.html">Order now</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container">
+    <div class="card pad">
+      <div class="kicker"><span class="dot"></span> Fast ordering • Confirmation message • Pickup by appointment</div>
+      <h1>Order</h1>
+      <p class="lead">Fill the form below to request an order. We’ll confirm availability and payment details.</p>
+      <div class="note">
+        <strong>Setup tip:</strong> This site is hosted on GitHub Pages (static). To receive orders by email, use Formspree or a Google Form.
+        In this template, set your Formspree URL in the form action: <strong>FORM_ACTION</strong>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="menu-grid">
+      <div class="menu-block">
+        <h2>Order Request Form</h2>
+        <form id="orderForm" class="form" method="POST" action="#" aria-label="Order form (set FORM_ACTION)">
+          <!-- FORM_ACTION: Replace action="#" with your Formspree endpoint, e.g. https://formspree.io/f/xxxxxxx -->
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="contact">Phone or Instagram handle</label>
+            <input id="contact" name="contact" required placeholder="@yourhandle or phone number" />
+          </div>
+          <div class="field">
+            <label for="date">Preferred pickup date</label>
+            <input id="date" name="pickup_date" type="date" required />
+          </div>
+
+          <div class="field">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="">Select</option>
+              <option>Signature Cinnamon Rolls</option>
+              <option>Stuffed Gooey Cookies</option>
+              <option>Custom Cake Inquiry</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="items">Items + quantity</label>
+            <textarea id="items" name="items" required placeholder="Example: Nutella Drizzle Roll x2, Biscoff Bliss Roll x4 (6-box)"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="notes">Notes (allergies / preferences)</label>
+            <textarea id="notes" name="notes" placeholder="Optional"></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Submit order request</button>
+          <p class="small">Alternative: <a class="link" href="contact.html">message us</a> on Instagram if you prefer.</p>
+        </form>
+      </div>
+
+      <div class="menu-block">
+        <h2>Quick links</h2>
+        <p class="small">If you don’t want a form, use buttons below for quick ordering.</p>
+        <div class="hero-actions" style="margin-top:12px">
+          <a class="btn ghost" href="https://www.instagram.com/cake_avenue_0" target="_blank" rel="noreferrer">Order via Instagram</a>
+          <a class="btn ghost" href="mailto:your@email.com?subject=Cake%20Avenue%20Order%20Request&body=Hi%20Cake%20Avenue%2C%0A%0AI%20would%20like%20to%20order%3A%0A-%20Items%20and%20quantity%3A%0A-%20Pickup%20date%3A%0A-%20Name%3A%0A-%20Contact%3A%0A%0AThank%20you%21">Order via Email</a>
+        </div>
+
+        <div class="note" style="margin-top:14px">
+          <strong>Pickup:</strong> by appointment only<br/>
+          <strong>Payment:</strong> shared on confirmation<br/>
+          <strong>Tip:</strong> box deals are perfect for gifting and events.
+        </div>
+
+        <img src="assets/img/rolls-placeholder.jpg" alt="Product photo placeholder" style="border-radius:18px; border:1px solid rgba(0,0,0,.08); margin-top:14px">
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <div class="brand-mark" aria-hidden="true">CA</div>
+          <div>
+            <div class="brand-name">Cake Avenue</div>
+            <div class="brand-tag">premium bakes</div>
+          </div>
+        </div>
+        <p class="muted">Handcrafted cinnamon rolls, stuffed cookies, and custom cakes made in small batches. Fresh, rich, and beautifully finished.</p>
+        <div class="badge-row">
+          <div class="mini-badge">Small batch</div>
+          <div class="mini-badge">Premium toppings</div>
+          <div class="mini-badge">Pickup by appointment</div>
+        </div>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <div style="display:grid; gap:8px">
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+          <a href="cakes.html">Custom Cakes</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Order & Social</h3>
+        <div style="display:grid; gap:8px">
+          <a href="order.html">Order form</a>
+          <a href="https://www.instagram.com/cake_avenue_0" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" onclick="navigator.clipboard.writeText('@cake_avenue_0'); return false;">Copy IG handle</a>
+        </div>
+        <p class="muted" style="margin-top:12px">© 2026 Cake Avenue. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
